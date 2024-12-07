@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75732323-5BA7-3BEC-BC7B-44EAEDB76F87}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>lib_gtest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_gtest.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_gtest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_gtest.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_gtest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_gtest.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_gtest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_gtest.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_gtest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\include;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\test_rte\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022 -BC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build --check-stamp-file C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\apps\light\lce\swc_lce_com_manager\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022 -BC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build --check-stamp-file C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\apps\light\lce\swc_lce_com_manager\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022 -BC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build --check-stamp-file C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\apps\light\lce\swc_lce_com_manager\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022 -BC:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build --check-stamp-file C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\apps\light\lce\swc_lce_com_manager\CMakeSourceLists.txt;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-death-test.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-message.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-param-test.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-printers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-spi.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-test-part.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest-typed-test.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest_pred_impl.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\gtest_prod.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-death-test-internal.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-filepath.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-internal.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-linked_ptr.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-param-util-generated.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-param-util.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-port-arch.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-port.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-string.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-tuple.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\gtest-type-util.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\custom\gtest-port.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\custom\gtest-printers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\include\gtest\internal\custom\gtest.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\src\gtest-internal-inl.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-actions.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-cardinalities.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-generated-actions.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-generated-function-mockers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-generated-matchers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-generated-nice-strict.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-matchers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-more-actions.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-more-matchers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock-spec-builders.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\gmock.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\gmock-generated-internal-utils.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\gmock-internal-utils.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\gmock-port.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\custom\gmock-generated-actions.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\custom\gmock-matchers.h" />
+    <ClInclude Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\include\gmock\internal\custom\gmock-port.h" />
+    <ClCompile Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googletest\src\gtest-all.cc" />
+    <ClCompile Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\lib\gtest\googlemock\src\gmock-all.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\MANAGEMENT\AUTOSAR\Autosar_TP\BCE2022\build\ZERO_CHECK.vcxproj">
+      <Project>{2C0751E5-32A2-3E87-868E-5E6C146DFC44}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>primatec</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>light</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>lceMaster</SHORT-NAME>
+              <ELEMENTS>
+                <!--CONSTANT-SPECIFICATION UUID="969348e4-3f13-4abc-be83-fcf0b3cd6fba">
+                  <SHORT-NAME>false</SHORT-NAME>
+                  <VALUE-SPEC>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>false</SHORT-LABEL>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </VALUE-SPEC>
+                </CONSTANT-SPECIFICATION-->	
+                <APPLICATION-SW-COMPONENT-TYPE>
+                  <SHORT-NAME>SwcLceMaster</SHORT-NAME>
+                  <PORTS>
+				    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>comStatus4IlhLin</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComStatus4IlhLin</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>comError4IlhLin</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComError4IlhLin</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comSetParameterLin</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComSetParameterLin</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+					<R-PORT-PROTOTYPE>
+                      <SHORT-NAME>comPutAppearanceToPlanesLin4</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComPutAppearanceToPlanesLin4</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR>
+                      <SHORT-NAME>SwcLceMaster_DefaultBehavior</SHORT-NAME>
+                      <EVENTS>
+                        <TIMING-EVENT>
+                          <SHORT-NAME>periodRunnable_LceMaster10ms</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/primatec/light/lceMaster/SwcLceMaster/SwcLceMaster_DefaultBehavior/RTERunnable_SwcLceMaster_RunLceMaster_10msTask</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>            
+                        
+                      </EVENTS>
+                      <!--HANDLE-TERMINATION-AND-RESTART>CAN-BE-TERMINATED-AND-RESTARTED</HANDLE-TERMINATION-AND-RESTART-->
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_LceSwcMaster_Init</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>RTERunnable_SwcLceMaster_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY>
+                          <SHORT-NAME>RTERunnable_SwcLceMaster_RunLceMaster_10msTask</SHORT-NAME>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comSetParameterLin_comDampingInteriorIlluminationLIN</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comSetParameterLin</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComSetParameterLin/comDampingInteriorIlluminationLIN</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+							<VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comSetParameterLin_comTargetLuminanceFunctionlightLIN</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comSetParameterLin</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComSetParameterLin/comTargetLuminanceFunctionlightLIN</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            
+							 <!-- Start comStatus4IlhLin -->
+                            <VARIABLE-ACCESS>
+                              <SHORT-NAME>DRPA_comStatus4IlhLin_comCommErr4ILH10LIN</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/primatec/light/lceMaster/SwcLceMaster/comStatus4IlhLin</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Default/IComStatus4IlhLin/comCommErr4ILH10LIN</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>RTERunnable_SwcLceMaster_RunLceMaster_10msTask</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                    <!--SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION-->
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
