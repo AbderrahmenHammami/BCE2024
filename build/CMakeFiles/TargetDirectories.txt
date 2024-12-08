@@ -1,5 +1,0 @@
-C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/lib_gtest.dir
-C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/gtest_swc_lce_com_manager_sut.dir
-C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/gmock_rte_SwcLceComManager.dir
-C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/ALL_BUILD.dir
-C:/MANAGEMENT/AUTOSAR/Autosar_TP/BCE2022/build/CMakeFiles/ZERO_CHECK.dir
