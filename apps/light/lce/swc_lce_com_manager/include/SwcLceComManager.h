@@ -24,7 +24,8 @@ namespace lce
 			IComLight_Ctrl_Inputs_CTR_FN_DR_Type ctrFnDr;
 			IComLight_Ctrl_Inputs_CTR_FN_PAR_Type ctrFnPar;
 			IComLight_Ctrl_Inputs_CTR_FN_POS_Type ctrFnPos;
-
+			IComCar_State_VEH_ST_Type vehSt;
+			IComMotor_Speed_Motor_Speed_Type motorSpeed;
 			SwcLceComManager();
 
 			static SwcLceComManager& getInstance();
