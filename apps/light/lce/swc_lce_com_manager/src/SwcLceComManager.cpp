@@ -52,12 +52,14 @@ namespace lce
 		{
 			// develop code of this function: read all inputs RTE Read ()
 			Rte_Read_SwcLceComManager_comBrightness_Rain_Sensor_ST_RB_LIN(&stRbLin);
-			Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN(&stLpLin);				
+			Rte_Read_SwcLceComManager_comLight_Ctrl_Inputs_ST_LP_LIN(&stLpLin);		
+			Rte_Read_SwcLceComManager_comCar_State_VEH_ST(&vehSt);
+			Rte_Read_SwcLceComManager_comMotor_Speed_Motor_Speed(&motorSpeed);
 		}
 		void SwcLceComManager::writeOutputs()
 		{
 			// develop code of this function: we will call RTE Write to be consumed by SwcLceMaster
-			rte_wri
+			
 			// develop code of this function: we will call RTE Write to be consumed by External ECUs RTE Write CTR_FN_DR
 		}
 	}
