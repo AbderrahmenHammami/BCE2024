@@ -1,10 +1,21 @@
 set(
-    SwcLceMaster_headerFiles
-    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/include/SwcLceMaster.h
-   )
-	
-set(
-    SwcLceMaster_sourceFiles
-    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/src/Rte_SwcLceMaster.cpp
-    ${PROJECT_SOURCE_DIR}/apps/light/lce/swc_lce_master/src/SwcLceMaster.cpp
-   )
+    SwcLceMaster_TestRTE_headerFiles
+    ./test_rte/generated/Rte_SwcLceMaster.h
+	./test_rte/generated/Rte_SwcLceMaster_BufferDecorator.h
+	./test_rte/generated/Rte_SwcLceMaster_CanoeTraceDump.h
+	./test_rte/generated/Rte_SwcLceMaster_Interface.h
+	./test_rte/generated/Rte_SwcLceMaster_Mock.h
+	./test_rte/generated/Rte_SwcLceMaster_TraceDecorator.h
+	./test_rte/generated/Rte_SwcLceMaster_Type.h
+	./test_rte/generated/Rte_Type.h
+	./test_rte/generated/SwcLceMaster_FixtureBase.h
+	)
+	set(
+    SwcLceMaster_TestRTE_sourceFiles
+    ./test_rte/generated/Rte_SwcLceMaster.cpp
+	./test_rte/generated/Rte_SwcLceMaster_BufferDecorator.cpp
+	./test_rte/generated/Rte_SwcLceMaster_CanoeTraceDump.cpp
+	./test_rte/generated/Rte_SwcLceMaster_Mock.cpp
+	./test_rte/generated/Rte_SwcLceMaster_TraceDecorator.cpp
+	./test_rte/generated/SwcLceMaster_FixtureBase.cpp
+	)

@@ -7,3 +7,7 @@
 ..\Autosar\BCECommonTypes.arxml
 ..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComMotor_Speed.arxml
 ..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComCar_State.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComECU_Voltage.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComCar_CTR_ECU.arxml
+..\..\apps\light\lce\swc_lce_com_manager\arxml\interfaces\IComCTR_EL_R.arxml
+..\..\apps\light\lce\swc_lce_master\arxml\components\SwcLceMaster.arxml
