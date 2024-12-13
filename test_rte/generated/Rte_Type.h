@@ -17,6 +17,9 @@ extern "C" {
 typedef unsigned char IComLight_Ctrl_Inputs_CTR_FN_DR_Type;
 typedef unsigned char IComLight_Ctrl_Inputs_CTR_FN_POS_Type;
 typedef unsigned char IComLight_Ctrl_Inputs_CTR_FN_PAR_Type;
+typedef unsigned char IComCar_CTR_FN_LCU_Type;
+typedef unsigned char IComCar_CTR_FN_BRS_Type;
+typedef float IComBCE_Voltage_Type;
 typedef unsigned char IComLight_Ctrl_Inputs_ST_LP_LIN_Type;
 typedef unsigned char IComBrightness_Rain_Sensor_ST_RB_LIN_Type;
 typedef unsigned char IComCar_State_VEH_ST_Type;
@@ -161,9 +164,6 @@ typedef UInt8 ByteArray11[11];
 typedef UInt8 ByteArray516[516];
 typedef UInt8 ByteArray124[124];
 typedef UInt8 ByteArray13[13];
-typedef float IComBCE_Voltage_Type;
-typedef unsigned char IComCar_CTR_FN_LCU_Type;
-typedef unsigned char IComCar_CTR_FN_BRS_Type;
 
 
 /********************* mode declaration groups ***********************/

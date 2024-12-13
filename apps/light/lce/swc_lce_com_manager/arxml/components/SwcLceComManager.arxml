@@ -24,15 +24,70 @@
                       <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_R</PROVIDED-INTERFACE-TREF>
                     </P-PORT-PROTOTYPE>
 
+					  <P-PORT-PROTOTYPE>
+						  <SHORT-NAME>comCar_CTR_ECU</SHORT-NAME>
+						  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCar_CTR_ECU</PROVIDED-INTERFACE-TREF>
+					  </P-PORT-PROTOTYPE>
+					  
+					  
+		              <P-PORT-PROTOTYPE>
+						  <SHORT-NAME>ECU_Voltage</SHORT-NAME>
+						  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComECU_Voltage</REQUIRED-INTERFACE-TREF>
+					  </P-PORT-PROTOTYPE>
+					  
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>Light_Ctrl_Inputs</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComLight_Ctrl_Inputs</REQUIRED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    
+					<P-PORT-PROTOTYPE>
+                       <SHORT-NAME>Brightness_Rain_Sensor</SHORT-NAME>
+                       <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComBrightness_Rain_Sensor</REQUIRED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+					          
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>Car_State</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCar_State</REQUIRED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+				          
+                    <P-PORT-PROTOTYPE>
+                      <SHORT-NAME>Motor_Speed</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComMotor_Speed</REQUIRED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+					  
+						  
+						  
+					  <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>CTR_EL_F</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_F</PROVIDED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
 
+ 
+                    <R-PORT-PROTOTYPE>
+                      <SHORT-NAME>CTR_EL_R</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCTR_EL_R</PROVIDED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+
+					  <R-PORT-PROTOTYPE>
+						  <SHORT-NAME>Car_CTR_ECU</SHORT-NAME>
+						  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComCar_CTR_ECU</PROVIDED-INTERFACE-TREF>
+					  </R-PORT-PROTOTYPE>
+					  
+					  
+					  
+					<R-PORT-PROTOTYPE>
+						  <SHORT-NAME>comECU_Voltage</SHORT-NAME>
+						  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComECU_Voltage</REQUIRED-INTERFACE-TREF>
+					  </R-PORT-PROTOTYPE>
+					  
                     <R-PORT-PROTOTYPE>
                       <SHORT-NAME>comLight_Ctrl_Inputs</SHORT-NAME>
                       <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComLight_Ctrl_Inputs</REQUIRED-INTERFACE-TREF>
                     </R-PORT-PROTOTYPE>
                     
-					          <R-PORT-PROTOTYPE>
-                                <SHORT-NAME>comBrightness_Rain_Sensor</SHORT-NAME>
-                                <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComBrightness_Rain_Sensor</REQUIRED-INTERFACE-TREF>
+					<R-PORT-PROTOTYPE>
+                       <SHORT-NAME>comBrightness_Rain_Sensor</SHORT-NAME>
+                       <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComBrightness_Rain_Sensor</REQUIRED-INTERFACE-TREF>
                     </R-PORT-PROTOTYPE>
 					          
                     <R-PORT-PROTOTYPE>
@@ -44,6 +99,9 @@
                       <SHORT-NAME>comMotor_Speed</SHORT-NAME>
                       <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Default/IComMotor_Speed</REQUIRED-INTERFACE-TREF>
                     </R-PORT-PROTOTYPE>
+					  
+				  
+				
                     
                   </PORTS>
                   <INTERNAL-BEHAVIORS>
