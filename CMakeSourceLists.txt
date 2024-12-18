@@ -10,7 +10,7 @@ set(
 	./test_rte/generated/Rte_Type.h
 	./test_rte/generated/SwcLceComManager_FixtureBase.h
 	)
-	set(
+set(
     SwcLceComManager_TestRTE_sourceFiles
     ./test_rte/generated/Rte_SwcLceComManager.cpp
 	./test_rte/generated/Rte_SwcLceComManager_BufferDecorator.cpp
@@ -32,7 +32,7 @@ set(
 	./test_rte/generated/Rte_Type.h
 	./test_rte/generated/SwcLceMaster_FixtureBase.h
 	)
-	set(
+set(
     SwcLceMaster_TestRTE_sourceFiles
     ./test_rte/generated/Rte_SwcLceMaster.cpp
 	./test_rte/generated/Rte_SwcLceMaster_BufferDecorator.cpp
